@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<style>
+  #credittxt {
+    /* Image taken from the ADA website CSS Settings */
+    text-align: center;
+    padding: 5px;
+    font-size: 12.5px;
+    font-family: Helvetica;
+    font-weight: lighter;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Project</title>
+  <meta name="author" content="Robert">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/home.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1 style="font-family:Lucida Sans; color:black; font-weight:bolder; font-size: 40px;">TIC-TAC-TOE CHALLENGE!</h1>
+    <img style="display: block; width: 20%; margin-left: auto; margin-right: auto;" src="img/TTTChallenge.PNG" alt="TIC-TAC-TOE CHALLENGE">
+  </div>
+
+  <!-- Navigation Bar-->
+  <div class="navbar">
+    <a onClick="window.location.reload()">Home</a> <!-- Reloads the webpage because you are already on the home page-->
+    <a href="game.html">Play a Singleplayer Match</a>
+    <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="right">Login</a>
+    <a onclick="document.getElementById('id001').style.display='block'" class="right">Create an Account</a>
+    <a class="otherhover">You are not logged in</a>
+
+
+  </div>
+
+  <!-- 2-column layout divided to be side and main content-->
+  <div class="row">
+    <div class="side">
+      <h2 id="title">Welcome to TIC-TAC-TOE CHALLENGE!</h2>
+      <p id="ptxt">Tic-Tac-Toe is a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares.</p>
+      <h2 id="title">Want to play Unlimited Tic-Tac-Toe games?</h2>
+      <p id="ptxt">Only guests can play a demo tic-tac-toe match, those who create a account can play unlimited amounts of tic-tac-toe games!</p>
+    </div>
+
+    <div class="main">
+      <h2 id="maintxt">How do I start a Tic-Tac-Toe game?</h2>
+      <p id="ptxt">Press the "Play a Singleplayer Match" button in the navigatonal bar to start a game.</p>
+      <h2 id="maintxt">Where can I send any issues or bugs I found playing the game?</h2>
+      
+      <div style="margin-right: auto; margin-left: 370px;">
+      <a style="background-size: 50px; background-color: cornflowerblue; size: 50px; text-decoration:none; padding: 10px; color: white; font-family: verdana; margin-left: auto; margin-right: auto;" href="issueform.html" target="_blank">Click here to send an issue form</a>
+      </div>
+      
+      <h5 id="gallerytitle">Image Gallery</h2>
+      <p style="background-color: black; font-size: 5px; margin-top: -60px;">____</p>
+
+        <main class="main-content">
+          <ul class="thumbnail-list">
+            <li class="thumbnail-item">
+              <a href="#" data-image-role="trigger" data-image-title="Welcome to TIC-TAC-TOE CHALLENGE!"
+                data-image-url="img/TTTChallenge.png">
+                <img class="thumbnail-image" src="img/TTTChallenge.png" alt="Image from Pixabay">
+              </a>
+            </li>
+            <li class="thumbnail-item">
+              <a href="#" data-image-role="trigger" data-image-title="Singleplayer Tic-Tac-Toe!"
+                data-image-url="img/galleryimg1.png">
+                <img class="thumbnail-image" src="img/galleryimg1.PNG" alt="Singleplayer Tic-Tac-Toe">
+              </a>
+            </li>
+            <li class="thumbnail-item">
+              <a href="#" data-image-role="trigger" data-image-title="Comparison on how many Tic-Tac-Toe games you can play as a Guest or a Account"
+                data-image-url="img/galleryimg2.png">
+                <img class="thumbnail-image" src="img/galleryimg2.png" alt="Play only 1 game as a guest, or play unlimited games as a account!">
+              </a>
+            </li>
+          </ul>
+          <div class="detail-image-container">
+            <!-- Big Image -->
+            <div class="detail-image-frame" data-image-role="frame">
+              <img class="detail-image" data-image-role="target" src="img/TTTChallenge.PNG" alt="Welcome to TIC-TAC-TOE CHALLENGE!">
+              <span class="detail-image-title" data-image-role="title">Welcome to TIC-TAC-TOE CHALLENGE!</span>
+            </div>
+          </div>
+    </div>
+    
+  </div>
+
+  <div class="footer">
+    <h2 style="font-family: Trebuchet MS; font-size: small;">TIK-TAC-TOE CHALLENGE is created by 7391001</h2>
+  </div>
+
+<!-- Modal Login Screen-->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/TTTChallenge.PNG" alt="TIC-TAC-TOE CHALLENGE" class="logo">
+    </div>
+
+    <div class="container">
+      <label for="uname" style="font-family: Arial;"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" style="font-family: arial;" required>
+
+      <label for="psw" style="font-family: Arial;"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" style="font-family: arial;" required>
+        
+      <button type="submit">Login</button>
+      <label style="font-family: Arial; font-weight: 500;">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbt">Cancel</button>
+      <span id="forgotPassMessage">Contact 7391001 for further investigation about this.</span>
+      <span class="psw" onclick="forgotPassMessage()">Forgot Password</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!-- Sign-Up Form-->
+
+<div id="id001" class="modal">
+  <span onclick="document.getElementById('id001').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1 style="font-family: arial;">Sign Up</h1>
+      <p style="font-family: arial;">Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email" style="font-family: arial;"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" style="font-family: arial;" required>
+
+      <label for="psw" style="font-family: arial;"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" style="font-family: arial;" required>
+
+      <label for="psw-repeat" style="font-family: arial;"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" style="font-family: arial;" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px; font-family: arial;"> Remember me
+      </label>
+
+      <p style="font-family: arial;">Your account may not be saved because you are signing up locally.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id001').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+
+</html>

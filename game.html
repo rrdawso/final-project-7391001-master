@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<style>
+  #credittxt {
+    /* Image taken from the ADA website CSS Settings */
+    text-align: center;
+    padding: 5px;
+    font-size: 12.5px;
+    font-family: Helvetica;
+    font-weight: lighter;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Project</title>
+  <meta name="author" content="Robert">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/game.css">
+</head>
+
+<body onLoad="startGame();"> <!-- Start the tic-tac-toe game when the user enters the singleplayer page-->
+  <div class="header">
+    <h1 style="font-family:Lucida Sans; color:black; font-weight:bolder;">TIC-TAC-TOE CHALLENGE!</h1>
+    <img style="display: block; width: 20%; margin-left: auto; margin-right: auto;" src="img/TTTChallenge.PNG" alt="TIC-TAC-TOE CHALLENGE">
+  </div>
+
+  <!-- Navigation Bar-->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a onClick="window.location.reload()">Play a Singleplayer Match</a> <!-- Reloads the webpage because you are already on the home page-->  
+    <a class="otherhover">You are not logged in</a>  
+  </div>
+
+  <!-- 2-column layout divided to be side and main content-->
+  <div class="main">
+      <h2 id="title">Singleplayer</h2>
+      <p id="ptxt">You should see the Tic-Tac-Toe game under this text. If it is not visible, reloading is recommended.</p>
+  </div>
+
+  <p id="turntext">The undefined is playing...</p>
+  <p id="warningmessage">That square is already been used! Please choose an empty square.</p>
+
+<div class="center">
+  <div class="ticTacToe">
+    <div class="column">
+      <span class="square" onclick="nextMove(this);"></span>
+      <span class="square" onclick="nextMove(this);"></span>
+      <span class="square" onclick="nextMove(this);"></span>
+    </div>
+    <div class="column">
+      <span class="square" onclick="nextMove(this);"></span>
+      <span class="square" onclick="nextMove(this);"></span>
+      <span class="square" onclick="nextMove(this);"></span>
+    </div>
+    <div class="column">
+      <span class="square" onclick="nextMove(this);"></span>
+      <span class="square" onclick="nextMove(this);"></span>
+      <span class="square" onclick="nextMove(this);"></span>
+    </div>
+  </div>
+</div>
+  
+
+  <div class="footer">
+    <h2 style="font-family: Trebuchet MS; font-size: small;">TIK-TAC-TOE CHALLENGE is created by 7391001</h2>
+  </div>
+
+  <script src="scripts/tictactoe.js"></script>
+</body>
+
+</html>

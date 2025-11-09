@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe Issue/Bug Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/issueform.css">
+</head>
+
+<body>
+  <header>
+    <h2>TIC-TAC-TOE Challenge Issue Form</h2>
+  </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h1 class="panel-title">Issue Report</h1>
+            </div>
+            <div class="panel-body">
+
+              <form data-coffee-order="form">
+
+                    <div class="form-group">
+                        <label for="issueOrder">Issue / Bug</label>
+                        <input class="form-control" name="issue" id="issueOrder" autofocus required pattern="[a-zA-Z\s]+">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="john@doe.com" required>
+                    </div>
+                    <label>How serious is this issue?</label>
+                    <div class="radio">
+                      <label>
+                      <input type="radio" name="size" value="minor">
+                      Minor
+                      </label>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                    <input type="radio" name="size" value="major" checked>
+                    Major
+                  </label>
+                    </div>
+
+                    <div class="radio">
+                      <label>
+                      <input type="radio" name="size" value="GameBreaking">
+                      Game Breaking
+                      </label>
+                  </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="reset" class="btn btn-default">Reset</button>
+                    <br></br>
+                    <label>This form is specifically for making game issue reports. If you have problems with your account contact 7391001.</label>
+                </form>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+        <!-- Checklist -->
+        <div class="col-sm-6">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h1 class="panel-title">Sent Issue Reports</h1>
+            </div>
+          <div class="panel-body">
+            <div id="orderRow" data-coffee-order="checklist"></div>
+          </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/remotedatastore.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/validation.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/checklist.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/formhandler.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/datastore.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/truck.js" charset="utf-8"></script>
+    <script type="text/javascript" src="issueformscripts/issueform.js" charset="utf-8"></script>
+</body>
+
+</html>
