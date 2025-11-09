@@ -24,8 +24,6 @@ final-project-7391001-master/
 └── .gitignore
 ```
 
-## Getting Started
-
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Edge, etc.)
 - Node.js (for development server)
