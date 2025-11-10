@@ -1,5 +1,5 @@
 # Tic-Tac-Toe Challenge
-CS 1741: Web Design with JavaScript - John Bartucz
+CS 1741: Web Design with JavaScript
 
 ## Description
 A web-based Tic-Tac-Toe game with a clean interface and singleplayer mode. The project includes a mock login/signup system (non-functional demo) and responsive design.
